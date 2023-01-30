@@ -1,9 +1,12 @@
 package ru.netilogy.javaqa.radio;
 
 public class Radio {
-    public int currentRadioStation;
-    public int maxRadioStation = 9;
-    public int minRadioStation = 0;
+    private int currentRadioStation;
+    private int maxRadioStation = 9;
+    private int minRadioStation = 0;
+    private int currentSoundVolume;
+    private int maxSoundVolume = 10;
+    private int minSoundVolume = 0;
 
     public Radio() {
         currentRadioStation = 0;
@@ -13,6 +16,11 @@ public class Radio {
     public int getCurrentRadioStation() {
         return currentRadioStation;
     }
+
+    public int getCurrentSoundVolume() {
+        return currentSoundVolume;
+    }
+
 
     public void setCurrentRadioStation(int newCurrentRadioStation) {
         if (newCurrentRadioStation < 0) {
@@ -24,26 +32,6 @@ public class Radio {
         currentRadioStation = newCurrentRadioStation;
     }
 
-    public void nextRadioStation() {
-        if (currentRadioStation < maxRadioStation) {
-            currentRadioStation = currentRadioStation + 1;
-        }
-    }
-
-    public void preRadioStation() {
-        if (currentRadioStation > minRadioStation) {
-            currentRadioStation = currentRadioStation - 1;
-        }
-    }
-
-    public int currentSoundVolume;
-    public int maxSoundVolume = 10;
-    public int minSoundVolume = 0;
-
-    public int getCurrentSoundVolume() {
-        return currentSoundVolume;
-    }
-
     public void setCurrentSoundVolume(int newCurrentSoundVolume) {
         if (newCurrentSoundVolume < 0) {
             newCurrentSoundVolume = 0;
@@ -52,6 +40,22 @@ public class Radio {
             return;
         }
         currentSoundVolume = newCurrentSoundVolume;
+    }
+
+    public void nextRadioStation() {
+        if (currentRadioStation < maxRadioStation) {
+            currentRadioStation = currentRadioStation + 1;
+        } else {
+            currentRadioStation = 0;
+        }
+    }
+
+    public void preRadioStation() {
+        if (currentRadioStation > minRadioStation) {
+            currentRadioStation = currentRadioStation - 1;
+        } else {
+            currentRadioStation = 0;
+        }
     }
 
     public void increaseSoundVolume() {
