@@ -1,16 +1,21 @@
 package ru.netilogy.javaqa.radio;
 
 public class Radio {
-    private int currentRadioStation;
+
     private int maxRadioStation = 9;
     private int minRadioStation = 0;
-    private int currentSoundVolume;
-    private int maxSoundVolume = 10;
-    private int minSoundVolume = 0;
+    private int currentRadioStation = minRadioStation;
 
+    private int maxSoundVolume = 100;
+    private int minSoundVolume = 0;
+    private int currentSoundVolume = minSoundVolume;
     public Radio() {
-        currentRadioStation = 0;
-        currentSoundVolume = 0;
+
+
+    }
+    public Radio(int stationCount){
+        this.maxRadioStation=stationCount-1;
+
     }
 
     public int getCurrentRadioStation() {
@@ -20,23 +25,26 @@ public class Radio {
     public int getCurrentSoundVolume() {
         return currentSoundVolume;
     }
+public  int getMaxRadioStation(){
+        return maxRadioStation;
+}
 
 
     public void setCurrentRadioStation(int newCurrentRadioStation) {
-        if (newCurrentRadioStation < 0) {
-            newCurrentRadioStation = 0;
+        if (newCurrentRadioStation < minRadioStation) {
+            newCurrentRadioStation = minRadioStation;
         }
-        if (newCurrentRadioStation > 9) {
-            newCurrentRadioStation = 9;
+        if (newCurrentRadioStation > maxRadioStation) {
+            newCurrentRadioStation = maxRadioStation;
         }
         currentRadioStation = newCurrentRadioStation;
     }
 
     public void setCurrentSoundVolume(int newCurrentSoundVolume) {
-        if (newCurrentSoundVolume < 0) {
-            newCurrentSoundVolume = 0;
+        if (newCurrentSoundVolume < minSoundVolume) {
+            newCurrentSoundVolume = minSoundVolume;
         }
-        if (newCurrentSoundVolume > 10) {
+        if (newCurrentSoundVolume > maxSoundVolume) {
             return;
         }
         currentSoundVolume = newCurrentSoundVolume;
