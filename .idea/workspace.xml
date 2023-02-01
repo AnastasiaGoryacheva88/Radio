@@ -65,17 +65,8 @@
       <command value="mvn verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RadiosTest.turnToNextRadioStationMax">
-    <configuration name="RadiosTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Javaqamvn" />
-      <option name="PACKAGE_NAME" value="ru.netilogy.javaqa.radio" />
-      <option name="MAIN_CLASS_NAME" value="ru.netilogy.javaqa.radio.RadiosTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RadiosTest.increaseSoundVolumeAboveMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RadiosTest.ifSoundVolumeAboveMax">
+    <configuration name="RadiosTest.SetSetSoundVolumeMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
         <pattern>
@@ -85,13 +76,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netilogy.javaqa.radio" />
       <option name="MAIN_CLASS_NAME" value="ru.netilogy.javaqa.radio.RadiosTest" />
-      <option name="METHOD_NAME" value="increaseSoundVolumeAboveMax" />
+      <option name="METHOD_NAME" value="SetSetSoundVolumeMin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadiosTest.lowSoundVolumeOverMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadiosTest.SoundVolumeAfterMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
         <pattern>
@@ -101,13 +92,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netilogy.javaqa.radio" />
       <option name="MAIN_CLASS_NAME" value="ru.netilogy.javaqa.radio.RadiosTest" />
-      <option name="METHOD_NAME" value="lowSoundVolumeOverMin" />
+      <option name="METHOD_NAME" value="SoundVolumeAfterMax" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadiosTest.shouldSetRadioStation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadiosTest.SoundVolumeAfterMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
         <pattern>
@@ -117,13 +108,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netilogy.javaqa.radio" />
       <option name="MAIN_CLASS_NAME" value="ru.netilogy.javaqa.radio.RadiosTest" />
-      <option name="METHOD_NAME" value="shouldSetRadioStation" />
+      <option name="METHOD_NAME" value="SoundVolumeAfterMin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadiosTest.turnToNextRadioStationMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadiosTest.ifSoundVolumeAboveMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
         <pattern>
@@ -133,7 +124,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netilogy.javaqa.radio" />
       <option name="MAIN_CLASS_NAME" value="ru.netilogy.javaqa.radio.RadiosTest" />
-      <option name="METHOD_NAME" value="turnToNextRadioStationMax" />
+      <option name="METHOD_NAME" value="ifSoundVolumeAboveMax" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RadiosTest.lowSoundVolumeAboveMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Javaqamvn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netilogy.javaqa.radio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netilogy.javaqa.radio" />
+      <option name="MAIN_CLASS_NAME" value="ru.netilogy.javaqa.radio.RadiosTest" />
+      <option name="METHOD_NAME" value="lowSoundVolumeAboveMax" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RadiosTest.turnToNextRadioStationMax" />
-        <item itemvalue="JUnit.RadiosTest.shouldSetRadioStation" />
-        <item itemvalue="JUnit.RadiosTest.lowSoundVolumeOverMin" />
-        <item itemvalue="JUnit.RadiosTest.increaseSoundVolumeAboveMax" />
-        <item itemvalue="JUnit.RadiosTest" />
+        <item itemvalue="JUnit.RadiosTest.ifSoundVolumeAboveMax" />
+        <item itemvalue="JUnit.RadiosTest.lowSoundVolumeAboveMax" />
+        <item itemvalue="JUnit.RadiosTest.SoundVolumeAfterMax" />
+        <item itemvalue="JUnit.RadiosTest.SoundVolumeAfterMin" />
+        <item itemvalue="JUnit.RadiosTest.SetSetSoundVolumeMin" />
       </list>
     </recent_temporary>
   </component>
